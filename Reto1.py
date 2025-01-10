@@ -11,12 +11,11 @@ def imprime1a100 ( ):
     for num in range (1, 101):
         if num % 3 == 0 and num % 5 == 0:
             print ("fizzbuzz\n")
+        elif num % 3 == 0:
+            print ("fizz\n")
+        elif num % 5 == 0:
+            print ("buzz\n")
         else:
-            if num % 3 == 0:
-                print ("fizz\n")
-            elif num % 5 == 0:
-                print ("buzz\n")
-            else:
-                print (f"{num}\n")
+            print (f"{num}\n")
 
 imprime1a100 ( )
